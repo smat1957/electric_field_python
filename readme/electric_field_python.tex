@@ -167,9 +167,13 @@
 
 \chapter{電位の分布}
 
-\section{実験の目的}
+%\section{実験の目的}
 
 \section{実験}
+
+\begin{center}
+\includegraphics[scale=0.5]{./figure/experiment.eps}
+\end{center}
 
 \begin{itemize}
 \item[実験１] 直流安定化電源の$+5$[V]とGNDの端子に接続した「棒」を電極として電場を作る
@@ -190,10 +194,14 @@
   \item 等電位線を作図する
 \end{enumerate}
 
-\subsection{-5[V]を作るには}
+\subsection{ー5[V]を作るには}
 
-2台の直流安定化電源装置を使って、＋５[V]、０[V]、ー５[V]　の3つの電極を作る方法を考えてみます
-（実験3のために必要になる）
+2台の直流安定化電源装置を使って、＋５[V]、GND、ー５[V]　の3つの電極を引き出します\\
+以下の図に結線を書き込んでみましょう（実験3のために必要になります）\\
+
+\begin{center}
+\includegraphics[scale=0.5]{./figure/powersupply.eps}
+\end{center}
 
 \newpage
 
@@ -527,7 +535,7 @@ P点の電位$\phi_{P}$について整理すると、
 この式を見ると、P点の電位$\phi_{P}$は、P点を取り囲む東西南北の各格子点、E点の電位$\phi_{E}$、W点の電位$\phi_{W}$、S点の電位$\phi_{S}$、N点の電位$\phi_{N}$の4つから（平して）求めるという形になっています。
 
 ここまでの状態でプログラムして計算させることもできますが、実際にはこれを次の様に、
-無次元化と呼ばれる式の変形を施した上でプログラムするようにします。
+無次元化と呼ばれる式の変形を施した上でプログラムするようにします。\cite{2}
 \begin{equation*}
   T_{i,j} = \frac{A^2 {\varDelta Y}^2}{2({\varDelta X}^2+A^2 {\varDelta Y}^2)} (T_{i-1,j}+T_{i+1,j})+
           \frac{A^2 {\varDelta X}^2}{2({\varDelta X}^2+A^2 {\varDelta Y}^2)}(T_{i,j-1}+T_{i,j+1})
